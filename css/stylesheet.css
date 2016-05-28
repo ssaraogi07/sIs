@@ -1,0 +1,174 @@
+body#register {
+    background: url("../img/sr1.jpg") fixed;
+    background-size:1370px 800px;
+}
+body#home{
+    background-color: lightgray;
+}
+hr{
+    width: 60%;
+}
+input[type="radio"]:checked {
+    content: "";
+    background: red;
+}
+
+body#home .container {
+    width:100%;
+}
+body#register .container{
+    width: 100%;
+}
+.formButt{
+    margin-left: 40%;
+    margin-top: 50px;
+    width: 20%;
+    height: 45px;
+    border: 2px black;
+    float:left;
+}
+body#register div.box {
+    width: 33%;
+    float: left;
+}
+body#home div.box {
+    float: left;
+}
+
+
+div.t2 {
+    background-color: white;
+}
+
+.white {
+    padding-left:137px;
+    padding-right:40px;
+    color: white;
+}
+
+.black{
+  padding-left: 10px;
+  padding-right: 40px;
+  color: white;
+}
+
+tr {
+    padding: 10px 0 10px 0;
+}
+
+table {
+    width: 100%;
+}
+
+.t1 {
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}
+#radio{
+    height:55px;
+}
+.t2 {
+    width: 32%;
+    border-radius: 26px;
+    height: 45px;
+    padding-left: 10px;
+    border: 1px black;
+}
+
+
+.t2 .cal-div {
+    width: 71%;
+    float: right;
+}
+
+.t3 {
+    border-radius: 26px;
+    height: 45px;
+    padding-left: 10px;
+    border: 1px black;
+}
+.bigRadio {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+.t2:focus, .t3:focus {
+    outline: none;
+    border: 1px solid #9ecaed;
+    box-shadow: 0px 0px 4px #4195fc;
+}
+
+.padbot {
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.day {
+    width: 100%;
+    height: 45px;
+    height: 45px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.month {
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.year {
+    width: 100%;
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
+    height: 45px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.year-month-day-width {
+    width: 85px;
+    font-family: serif;
+    font-size: 15px;
+}
+
+.placeholderColor {
+    font-size: 13px;
+    line-height: 43px;
+    color: #B3A9B6;
+    font-family: sans-serif;
+}
+
+.t2 select {
+    margin-left: 7px;
+    margin-right: -4px;
+    background-color: white;
+    border: 1px black;
+}
+
+select:focus {
+    background-color: #DDDDDD;
+}
+body#register .logo{
+    height:70px;
+    width:70px;
+    margin-left:47%;
+}
+
+body#home .logo{
+    height:70px;
+    width:70px;
+}
+ul{
+  list-style-type: none;
+  font-size:25px;
+  margin:left;
+  padding-left: 10px;
+  display:block;
+  width: 100px;
+}

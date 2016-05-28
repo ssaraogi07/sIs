@@ -1,0 +1,301 @@
+<html>
+
+	<head>
+		<title>Registration</title>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+		<script type="text/javascript" src="js/filename.js"></script>
+
+
+	</head>
+	<style>
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+			float: right;
+	    position: fixed;
+	    top: 0;
+	    width: 100%
+	}
+
+	li{
+	  float: left;
+	}
+
+	li a {
+
+	    display:block;
+	    color: #000;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	}
+	li .active {
+	          background-color: #4CAF50;
+	          color: white;
+	          float: center;
+	}
+
+	li :hover:not(.active) {
+	    background-color: #555;
+	    color:white;
+	}
+	</style>
+	<ul>
+	 <li><a class="active" href="firstpage.html">Home</a></li>
+	 <li><a href="abt1.html" target="_blank">About Us</a></li>
+	 <li><a href="#contact">Contact</a></li>
+ </ul>
+	<body id="register">
+		<img src="img/nitd_logo.png" class="logo">
+		<h1 align="center" class="white" style="color:black">Student Registration Form</h1>
+	<hr>
+		<form name="myForm" id="myForm" onSubmit="return validate()">
+			<div class="container">
+				<div class="box">
+					<h2 align="center" class="white" style="color:black">Personal Details</h2>
+
+					<table>
+						<tr>
+							<td class="t1" >
+								<input class="t3" type="text" name="fname" id="fname" style="width:49%;" placeholder="First Name" onblur="allLetter1()"/>
+								<input class="t3" type="text" name="lname" id="lname" placeholder="Last Name" style="width:49%;" onblur="allLetter()"/> </td>
+						</tr>
+						<tr>
+							<td class="t1" id="radio" onblur="validsex()">
+								<input type="radio" class="bigRadio pad" name="mgender" id="mgender" value="male">
+								<span class="white">Male</span>
+								<input type="radio" class="bigRadio" name="fgender" id="fgender" value="female">
+								<span class="white padbot">Female</span>
+						</tr>
+						<tr>
+							<td class="t1">
+								<input class="t2" type="text" name="mobile" id="mobile" placeholder="Mobile Number" onblur="valmob()"/> </td>
+						</tr>
+						<tr>
+							<td class="t1">
+								<div class="t2" >
+									<label class="placeholderColor">Date Of Birth</label>
+									<div class="cal-div">
+										<select class="day year-month-day-width" name="item_meta[-10][0][-11]">
+											<option value="Default">Day</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15">15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+										</select>
+										<select class="month year-month-day-width" name="item_meta[-10][0][-11]">
+											<option value="Default">Month</option>
+											<option value="0">Jan</option>
+											<option value="1">Feb</option>
+											<option value="2">Mar</option>
+											<option value="3">Apr</option>
+											<option value="4">May</option>
+											<option value="5">Jun</option>
+											<option value="6">Jul</option>
+											<option value="7">Aug</option>
+											<option value="8">Sep</option>
+											<option value="9">Oct</option>
+											<option value="10">Nov</option>
+											<option value="11">Dec</option>
+										</select>
+										<select class="year year-month-day-width" name="item_meta[-10][0][-11]" id="dob" onblur="generateAge()">
+											<option value="Default">Year</option>
+											<option value="2001">2001</option>
+											<option value="2000">2000</option>
+											<option value="1999">1999</option>
+											<option value="1998">1998</option>
+											<option value="1997">1997</option>
+											<option value="1996">1996</option>
+											<option value="1995">1995</option>
+											<option value="1994">1994</option>
+											<option value="1993">1993</option>
+											<option value="1992">1992</option>
+											<option value="1991">1991</option>
+											<option value="1990">1990</option>
+											<option value="1989">1989</option>
+											<option value="1988">1988</option>
+											<option value="1987">1987</option>
+											<option value="1986">1986</option>
+											<option value="1985">1985</option>
+											<option value="1984">1984</option>
+											<option value="1983">1983</option>
+											<option value="1982">1982</option>
+											<option value="1981">1981</option>
+										</select>
+									</div>
+								</div>
+						</tr>
+						<tr>
+						<td class="t1"><input class="t2" type="number" id="age" placeholder="age" name="age"/></td>
+						</tr>
+
+						<tr>
+							<td>
+							<fieldset style="float: left; width: 380px; background-color:#ffffff;">
+							Hobbies:
+                					<input type="checkbox" id="hb1" name="hb" >Swimming
+                					<input type="checkbox" id="hb2" name="hb" >Reading
+                					<input type="checkbox" id="hb3" name="hb" >Coding
+                					<input type="checkbox" id="chk" value="others" onclick="hobbieschk()">Others
+                					<input class="t3" type="text" id="others" style="display:none;" placeholder="Enter Other Hobbies">
+							</fieldset>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+	     	<div class="box">
+					<h2 align="center" class="white" style="color:black">Academic details</h2>
+					<table>
+						<tr>
+							<td class="t1">
+								<SELECT name="prog" id="prog" class="t2" onblur="progselect()">
+									<OPTION value="Default">Select Programme</OPTION>
+									<OPTION value="B.Tech">B.Tech</OPTION>
+									<OPTION value="M.Tech">M.Tech</OPTION>
+									<OPTION value="PhD">PhD</OPTION>
+							</td>
+						</tr>
+						<tr>
+							<td class="t1">
+								<SELECT name="department" id="department" class="t2" onchange="branchcode()" onblur="branchselect()">
+									<OPTION value="Default">Select Department</OPTION>
+									<OPTION value="ME">ME</OPTION>
+									<OPTION value="EE">EE</OPTION>
+									<OPTION value="CE">CE</OPTION>
+									<OPTION value="CHE">CHE</OPTION>
+									<OPTION value="MME">MME</OPTION>
+									<OPTION value="ECE">ECE</OPTION>
+									<OPTION value="CSE">CSE</OPTION>
+									<OPTION value="IT">IT</OPTION>
+							</td>
+						</tr>
+						<tr>
+							<td class="t1">
+								<SELECT name="sem" id="sem" class="t2" onblur="semselect()">
+									<OPTION value="Default">Select Semester</OPTION>
+									<OPTION value="First Semester">First Semester</OPTION>
+									<OPTION value="Second Semester">Second Semester</OPTION>
+									<OPTION value="Third Semester">Third Semester</OPTION>
+									<OPTION value="Fourth Semester">Fourth Semester</OPTION>
+									<OPTION value="Fifth Semester">Fifth Semester</OPTION>
+									<OPTION value="Sixth Semester">Sixth Semester</OPTION>
+									<OPTION value="Seventh Semester">Seventh Semester</OPTION>
+									<OPTION value="Eighth Semester">Eighth Semester</OPTION>
+							</td>
+						</tr>
+						<tr>
+							<td class="t1">
+								<input class="t2" name="regn"  id="r_no" type="number" onchange="year1()" placeholder="Registration Number" onblur="regselect()"/> </td>
+						</tr>
+
+						<tr>
+							<td class="t1" >
+								<input class="t3" type="text" id="year" name="yr" style="width:23%;" placeholder="Enter" />/
+								<input class="t3" type="text" id="bcode" name="dept" style="width:23%;" placeholder="Roll" />/
+								<input class="t3" type="text" name="no" style="width:23%;" placeholder="Number" />
+</td></tr>
+
+<script>
+function branchcode(){
+  	     var x = document.myForm.department;
+             var y = document.getElementById("bcode");
+
+            y.value=x.value;
+}
+function year1(){
+             var p = document.getElementById("r_no");
+             var q = document.getElementById("year");
+             q.value = p.value.substring(2,4);
+}
+</script>
+
+
+
+
+		    </table>
+		    </div>
+		<div class="box">
+					<h2 align="center" class="white" style="color:black">Login details</h2>
+					<table>
+						<tr>
+							<td class="t1">
+								<input class="t2" type="text"name="uid" id="uid" placeholder="User Name" onblur="userid_validation()"/>
+							</td>
+						</tr>
+						<tr>
+						<td class="t1"><input class="t2" type="text"placeholder="Email Address" name="email" id="email" onblur="ValidateEmail()"/></td>
+						</tr>
+						<tr>
+							<td class="t1">
+								<input class="t2" type="password" placeholder="Enter Password" name="pwd" id="pwd" onblur="passwd_validation()"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="t1">
+								<input class="t2" type="password" name="pwd1" id="pwd1" placeholder="Confirm password" onblur="passwordcheck()"/>
+							</td>
+						</tr>
+<script>
+function passwd_validation()
+ {
+	var passwd=document.myForm.pwd;
+	var passwd_len = passwd.value.length;
+	if (passwd_len == 0 ||passwd_len >= 10 || passwd_len < 6)
+		{
+			alert("Password should not be empty / length be between 6 to 10");
+			passwd.focus();
+			return false;
+		}
+   return true;
+ };
+function passwordcheck(){
+var a = document.getElementById("pwd");
+var b = document.getElementById("pwd1");
+if(a.value!=b.value)
+alert("password do not match")
+};
+
+</script>
+					</table>
+		</div>
+
+
+
+
+		</form>
+		<input type="submit" value="Submit" class="formButt" onclick="return formvalidation()">
+		</div>
+	</body>
+
+</html>

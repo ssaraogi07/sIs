@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Admin login </title>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+		float: right;
+    top: 0;
+    width: 100%
+}
+
+li{
+  float: left;
+}
+
+li a {
+
+    display:block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li .active {
+          background-color: #4CAF50;
+          color: white;
+          float: center;
+}
+
+li :hover:not(.active) {
+    background-color: #555;
+    color:white;
+}
+</style>
+</head>
+
+<body id="register">
+	<ul>
+				<li><a class="active" href="firstpage.html">Home</a></li>
+				<li><a href="abt1.html" target="_blank">About Us</a></li>
+				<li><a href="#contact">Contact</a></li>
+				</ul>
+
+	 <h1 align="center" class="white" style="color:black">Administrator Login</h1>
+
+		<form name="register" onSubmit="return validate()" method="post">
+			<div class="container">
+				<div align="center" style="padding-bottom:10px;">
+					<input class="t2" type="text" name="uname" style="width:30%;" placeholder="User Name" />
+				</div>
+				<div align="center" style="padding-bottom:10px;">
+					<input class="t2" type="password" name="pswd" style="width:30%;" placeholder="Password"/>
+				</div>
+			<div align="center" >
+				<input type="submit" value="LOGIN"  style="width:20%;height:45px;" >
+			</div>
+		</div>
+		</form>
+ </body>
+</html>

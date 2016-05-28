@@ -1,0 +1,60 @@
+<?php
+	session_start();
+	session_destroy();
+?>
+
+<html>
+<head>
+  <title>About Us</title>
+
+</head>
+<body id="register" bgcolor="#d9e4e0">
+  <h1 align="center">About Us</h1>
+<table>
+  <tr>
+<td align="center" style="font-size:1.5em;">
+
+                  The National Institute of
+              Technology, Durgapur (formerly Regional Engineering College,
+              Durgapur), was established by an Act of Parliament in 1960 as
+              one of the eight such colleges aimed to function as a pace
+              setter for engineering education in the country and to foster
+              national integration.It is a fully-funded premier
+              Technological Institution of the Government of India and is
+              administered by an autonomous Board of Governors.<br>
+              <br>
+
+              The Institute is a  University which awards B.Tech.,
+              M.C.A., M.Sc., M.B.A.,M.Tech. and Ph.D. degrees to students after
+              their successful completion of the specified courses. The
+              Institute imparts education in the disciplines of Chemical
+              Engineering, Civil Engineering, Computer Science and
+              Engineering, Electrical Engineering, Electronics and
+              Communication Engineering, Mechanical Engineering,
+              Metallurgical and Materials Engineering,Information Technology,
+              Biotechnology, Physics, Chemistry, Mathematics, Environmental science, Materials Science and Management Studies.
+              <p>
+      As decided by the Ministry of Human Resource Development, Government of India, the procedure for selection of candidates for admission to the Bachelor Degree Courses in Engineering/Technology in National Institute of Technology Durgapur and in other NITs is on the basis of State Rank/ All India Rank (AIR) of AIEEE conducted by Central Board of Secondary Education, New Delhi, and the same is executed through counselling by Central Counselling Board, AIEEE under guidance from MHRD, GOI as per schedule notified by CCB.
+
+In addition to the normal intake, a few seats are reserved for Foreign Students who are nominated by the Ministry of External Affairs, Government of India, and the Indian Council for Cultural Relations, Government of India.
+</p>
+
+</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign="top" align="left" id="register" style="font-size:1.5em; ">
+  The highest body in the administrative setup of the
+  Institute is the Board of Governors which is headed by the
+  eminent scientist and educationist Prof. Bikash Sinha, the former
+  Director of VECC and Saha Institute of Nuclear Physics.
+  The Board has representatives from the State and
+  Central Governments, the University, All India Council of
+  Technical Education, Indian Institute of Technology, the
+  Industry and the Faculty of the Institute. The Director is
+  the Head of Administration in the Institute.
+  </td></tr>
+</table>
+</body>
+</html>
